@@ -13146,8 +13146,8 @@ spec:
         app.kubernetes.io/name: argo-rollouts
     spec:
       containers:
-      #- image: quay.io/argoproj/argo-rollouts:v1.1.1
-      - image: ghcr.io/argoproj/argo-rollouts:latest@sha256:cd6578c9453a1482c8c10ccc9f06434d933499d5dcfbacdab1256ff7c04cda90
+      - image: quay.io/argoproj/argo-rollouts:v1.1.1
+      #- image: ghcr.io/argoproj/argo-rollouts:latest@sha256:cd6578c9453a1482c8c10ccc9f06434d933499d5dcfbacdab1256ff7c04cda90
         imagePullPolicy: Always
         livenessProbe:
           failureThreshold: 3
