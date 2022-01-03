@@ -28,8 +28,6 @@ spec:
         istio:
           virtualService:
             name: summer-k8s-mapping
-            routes:
-            - primary
       steps:
       - setWeight: 30
       - pause: {}
