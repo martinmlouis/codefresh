@@ -3,20 +3,16 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: simple-rollout
-  labels:
-    version: v2
 spec:
   revisionHistoryLimit: 1
   replicas: 10
   selector:
     matchLabels:
       app: summer-k8s-app
-      version: v2
   template:
     metadata:
       labels:
         app: summer-k8s-app
-        version: v2
     spec:
       containers:
       - name: webserver-simple
