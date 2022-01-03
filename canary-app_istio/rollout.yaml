@@ -25,9 +25,11 @@ spec:
       stableService: summer-k8s-service-stable
       canaryService: summer-k8s-service-canary
       trafficRouting:
-        ambassador:
-          mappings:
-            - summer-k8s-mapping
+        istio:
+          virtualService:
+            name: summer-k8s-mapping
+            routes:
+            - primary
       steps:
       - setWeight: 30
       - pause: {}
