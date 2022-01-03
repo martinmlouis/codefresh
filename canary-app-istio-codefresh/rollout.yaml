@@ -9,12 +9,10 @@ spec:
   selector:
     matchLabels:
       app: summer-k8s-app
-      version: v1
   template:
     metadata:
       labels:
         app: summer-k8s-app
-        version: v1
     spec:
       containers:
       - name: webserver-simple
