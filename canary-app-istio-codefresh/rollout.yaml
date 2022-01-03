@@ -3,8 +3,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: simple-rollout
-  lables:
-    version: v1
 spec:
   revisionHistoryLimit: 1
   replicas: 10
